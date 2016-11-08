@@ -1,11 +1,12 @@
 {
-    "name": "gamemaker",
-    "version": "0.1.0",
-    "main": "main.js",
-    "devDependencies": {
-        "electron-connect": "^0.6.0",
-        "gulp": "^3.9.1"
-    },
-    "author": "Margret Storm",
-    "license": "ISC"
+  "name": "gamemaker",
+  "version": "0.1.0",
+  "main": "main.js",
+  "devDependencies": {
+    "electron-connect": "^0.6.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  },
+  "author": "Margret Storm",
+  "license": "ISC"
 }
