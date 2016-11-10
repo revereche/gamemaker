@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    var number = 10;
     var again = require('./js/testagain.js');
 
     $("#stage").append("<div id='bg'></div>");
@@ -6,9 +7,9 @@ $(document).ready(function() {
 
     $("#btn1").click(function() {
         $("#bg").animate({
-          width: "300px",
-          left: "10%"
-        });
+            left: number + "%"
+        }, 1000);
+        number += 10;
     });
 
 });
