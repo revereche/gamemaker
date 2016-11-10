@@ -9,12 +9,14 @@ body {
   height: 468px;
   overflow: hidden; }
 
+#btn1 {
+  position: absolute;
+  z-index: 2; }
+
 #bg {
   position: absolute;
   width: 1664px;
   height: 936px;
-  animation-duration: 3s;
-  animation-name: slidein;
   background-color: #000;
   background-image: url("../img/bg.png"); }
 
