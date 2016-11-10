@@ -1,3 +1,18 @@
 body {
   font: 100% Helvetica, sans-serif;
   color: #888; }
+
+#stage {
+  position: absolute;
+  background-color: #888;
+  width: 832px;
+  height: 468px;
+  overflow: hidden; }
+
+#bg {
+  position: absolute;
+  top: -100px;
+  width: 1664px;
+  height: 936px;
+  background-color: #000;
+  background-image: url("../img/bg.png"); }

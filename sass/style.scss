@@ -1,7 +1,30 @@
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #888;
 
+$stage-width: 832px;
+$stage-height: 468px;
+
+$bg-offsetX: -100px;
+$bg-offsetY: -100px;
+
 body {
   font: 100% $font-stack;
   color: $primary-color;
+}
+
+#stage {
+  position: absolute;
+  background-color: #888;
+  width: $stage-width;
+  height: $stage-height;
+  overflow: hidden;
+}
+
+#bg {
+  position: absolute;
+  top: -100px;
+  width: $stage-width * 2;
+  height: $stage-height * 2;
+  background-color: #000;
+  background-image: url('../img/bg.png');
 }

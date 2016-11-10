@@ -19,8 +19,10 @@ gulp.task('default', function() {
 
     // Reload renderer process
     gulp.watch(['index.html',
+        'README.md',
         './js/**/*',
-        './css/**/*'
+        './css/**/*',
+        './img/**/*'
     ], electron.reload);
 
     // Watching for Gulp-Sass
