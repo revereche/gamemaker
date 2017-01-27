@@ -9,81 +9,38 @@ $(document).ready(function($) {
     $("body").keydown(function(e) {
         console.log(e);
         //right
-        if (e.which === 68) {
+        if (e.which == 39 || e.which == 68) {
           console.log("I heard it!");
           horz += 10;
             $("#bg").animate({
                 left: horz + "%"
-            }, 500);
+            }, 10);
         }
         //left
-        if (e.which === 65) {
+        if (e.which == 37 || e.which == 65) {
           console.log("I heard it!");
           horz -= 10;
             $("#bg").animate({
                 left: horz + "%"
-            }, 500);
+            }, 10);
         }
         //up
-        if (e.which === 87) {
+        if (e.which == 38 || e.which == 87) {
           console.log("I heard it!");
           vert -= 10;
             $("#bg").animate({
                 top: vert + "%"
-            }, 500);
+            }, 10);
         }
         //down
-        if (e.which === 83) {
+        if (e.which == 40 || e.which == 83) {
           console.log("I heard it!");
           vert += 10;
             $("#bg").animate({
                 top: vert + "%"
-            }, 500);
+            }, 10);
         }
     });
 
-
-/*
-    function checkKeyDown(e) {
-        var keyID = e.keyCode || e.which;
-        if (keyID === 38 || keyID === 87) { //up arrow or W key
-            MFlib.controls.up = true;
-            e.preventDefault();
-        }
-        if (keyID === 39 || keyID === 68) { //right arrow or D key
-            MFlib.controls.right = true;
-            e.preventDefault();
-        }
-        if (keyID === 40 || keyID === 83) { //down arrow or S key
-            MFlib.controls.down = true;
-            e.preventDefault();
-        }
-        if (keyID === 37 || keyID === 65) { //left arrow or A key
-            MFlib.controls.left = true;
-            e.preventDefault();
-        }
-    }
-
-
-    function checkKeyUp(e) {
-        var keyID = e.keyCode || e.which;
-        if (keyID === 38 || keyID === 87) { //up arrow or W key
-            MFlib.controls.up = false;
-            e.preventDefault();
-        }
-        if (keyID === 39 || keyID === 68) { //right arrow or D key
-            MFlib.controls.right = false;
-            e.preventDefault();
-        }
-        if (keyID === 40 || keyID === 83) { //down arrow or S key
-            MFlib.controls.down = false;
-            e.preventDefault();
-        }
-        if (keyID === 37 || keyID === 65) { //left arrow or A key
-            MFlib.controls.left = false;
-            e.preventDefault();
-        }
-    }
-*/
 
 });

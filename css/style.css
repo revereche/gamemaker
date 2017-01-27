@@ -19,11 +19,3 @@ body {
   height: 936px;
   background-color: #000;
   background-image: url("../img/bg.png"); }
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%; }
-  to {
-    margin-left: 0%;
-    width: 100%; } }
