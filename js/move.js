@@ -1,7 +1,6 @@
 $(document).ready(function($) {
     var horz = 0,
     vert = 0;
-    var again = require('./js/testagain.js');
 
     $("#stage").append("<div id='bg'></div>");
     $("#stage").append("<div id='sprite'></div>");
